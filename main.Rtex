@@ -1,0 +1,424 @@
+\documentclass[Nike, handout]{tuberlinbeamer}
+
+
+\newcommand{\secpa}{
+\begin{frame}
+\begin{center}
+\Large
+\insertsection{}
+\end{center}
+\end{frame}
+}
+\usepackage{multicol}
+\usepackage[ngerman]{babel}  % 'babel' muss geladen werden
+\usepackage[utf8]{inputenc}  % optional, aber empfehlenswert
+\usepackage{amsmath,amssymb,eurosym,color}
+\usepackage{graphicx}
+\usepackage{colortbl,multirow,booktabs}
+\usepackage{textcomp}
+\usepackage{epstopdf}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=,urlcolor=blue}
+\usepackage{soul}
+\usepackage{natbib}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{bibentry}
+\nobibliography*
+\bibliographystyle{apalike}
+\setbeamertemplate{caption}[numbered]
+\newcommand{\source}[1]{\vspace{-7pt} \caption*{ \tiny Quelle: {#1}} }
+% Die ueblichen Angaben
+\title{Rethinking urban space: The demand for green infrastructure}
+\subtitle{Study Project Winterterm 2018/19}
+\author[Sagebiel \& Pfeifer]{Julian Sagebiel \& Lena Pfeifer}
+\institute{Environmental and Land Economics}
+
+% Eigenes Logo einfuegen:
+\renewcommand{\pathtomylogo}{meinlogo}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Outline}
+
+\tableofcontents
+
+\end{frame}
+
+\section{Background and Contents}
+\secpa
+
+\begin{frame}{{\insertsection{}}}
+\begin{itemize}
+\item Cities suffer from increased motorized traffic leading to:
+\begin{itemize}
+\item Noise pollution
+\item Particulate matter pollution
+\item Traffic jams
+\item Conflicts arising from different modes of transport
+\item Competition for space
+\item Decrease in other urban ecosystem services
+\end{itemize}
+\item New mobility concepts should help to reduce at least some of these problems: \pause
+\begin{itemize}
+\item Introduction of electric vehicles
+\item Car-free zones and speed limits
+\item Improvements of public transportation services
+\item Sharing concepts
+\item Extension of bicycle infrastructure
+\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Challenges for Planners}
+
+\begin{itemize}
+\item New mobility concepts require a different infrastructure and new distribution of land uses. 
+\item Urban and landscape planners need to adjust to these new concepts and news demands on cities
+\item Negative externalities in the transportation sector have to be accounted for, especially bad air quality, less spaces for recreation etc.
+\item Conflicts between different groups of users need to be accounted for.
+
+\end{itemize}
+
+
+
+\end{frame}
+
+<<>>=
+# Create a sequence of numbers
+X = 2:10
+ 
+# Display basic statistical measures
+summary(X)
+ 
+@
+
+\subsection{Examples}
+
+
+
+\section{In this Study Project}
+
+\secpa
+
+\begin{frame}{In this Study Project}
+
+\begin{itemize}
+\item In this study project we investigate new mobility concepts and how it changes the urban infrastructure.
+\item The focus is on demand: Which concepts will people use, are people willing to switch mode of transportation and under which conditions.
+\item We use economic valuation techniques to answer research questions such as:
+\begin{itemize}
+\item Which factors facilitate the use of bicycles?
+\item Does sharing have the potential to become a key way to organize transportation?
+\item Are people willing to pay for better and greener city centers?
+\item Are car-free city centers a realistic scenario?
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Structure of the Project}
+\begin{itemize}
+\item In the first couple of meetings, we will learn about different mobility concepts, their effects on urban green infrastructures and urban ecosystem services.
+\item Further, we explore economic valuation methods, dive into the theory and statistical methods to estimate people's preferences and demand.
+\item In small groups, you will investigate potential or existing cases of innovative urban mobility concepts.
+\item As the whole group, you conduct your own empirical study.
+\item In the excursion week, we visit a European city which has implemented new mobility concepts (e.g., Copenhagen, Amsterdam).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Educational Objective}
+
+After the project, you should be acquainted with:
+
+\begin{itemize}
+\item The role of urban and landscape planning in the development of concepts of urban mobility
+\item The interactions between mobility and urban ecosystem services
+\item Economic methods to estimate demand in the transportation sector
+\end{itemize}
+
+Your skills should have improved in terms of:
+
+\begin{itemize}
+\item Holding presentations
+\item Writing scientific articles
+\item Mastering the many challenges that occur when working in groups
+\item Applying economic theory
+\item Conducting surveys and collecting data
+\item Using statistical methods to estimate preferences and demand.
+\item Using R Markdown and \LaTeX
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case Studies}
+\begin{itemize}
+    \item In groups of two people, you should investigate an existing case study of new mobility concepts.
+    \item Select a broad topic from the following ones:
+    \begin{itemize}
+        \item Public Transportation
+        \item Bicycle Infrastructure
+        \item Motorized Individual Transport
+        \item Integrated Concepts
+        \item Sharing Economy
+        \item Green Corridors 
+        \end{itemize}
+    \item Based on the topic chosen, identify an existing case study, preferably in Berlin
+    \item Visit the case study area, do a literature research on this case and similar cases, talk with experts and stakeholders... 
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Case Studies cont.}
+\begin{itemize}
+    \item Each group member will hold one presentation:
+    \begin{itemize}
+        \item A summary of the case, with all relevant details and an own evaluation (1 Nov 2018)
+        \item Based on the case study, an idea for an empirical research question (29 November 2018).
+    
+    \end{itemize}
+\item Based on the latter presentations, the whole group selects one research idea which we will then put into practice.
+\item The whole group will carry out an empirical study using a discrete choice experiment integrated into a survey.
+\item Additionally, each group will write an essay on the case study (Alternativ ein Reseach proposal wie ein Antrag).
+\end{itemize}
+ 
+\end{frame}
+
+\begin{frame}{Contacts}
+    \begin{itemize}
+        \item Here is a list of potential contacts for case studies and background information
+        \begin{itemize}
+            \item \href{https://www.innoz.de}{InnoZ – Innovation Center for Mobility and Societal Change}
+            \item \href{http://neue-mobilitaet.berlin/dare_more_sustainable_mobility/?lang=en}{Neue Mobilität Berlin}
+            \item \href{https://changing-cities.org}{Changing Cities}
+            \item \href{https://interaktiv.tagesspiegel.de/radmesser/}{Radmesser}
+            \item \href{https://www.innoz.de}{INNOZ}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Empirical Study}
+   \begin{itemize}
+       \item The empirical study is a looooooot of work!
+       \item Be prepared to work during the weekend, outside while it rains, and together with people you don't like.
+       \item The study consists of several parts, which will be handled in subgroups.
+       \item The core of the study is a choice experiment.
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Empirical Study Schedule}
+   \begin{itemize}
+       \item The following steps should be followed
+       \begin{itemize}
+           \item Finalization of research question and construction of testable hypothesis
+           \item Extensive literature review on the topic esp. on DCE applications
+           \item Study scope, area, sample etc.
+           \item Sampling strategy 
+           \item Construction of questionnaire
+           \item Development of DCE
+           \item Field Phase (pretesting and survey conduction)
+           \item Data Preparation and Analysis
+           \item Writing a scientific paper
+           
+       \end{itemize}
+   \end{itemize} 
+\end{frame}
+
+\begin{frame}{Empirical Study}
+\begin{itemize}
+    \item The product of the empirical study should a scientific paper, which we submit to an international peer reviewed journal.
+    \item The whole group gets one grade for the paper.
+    \item Submission to a journal is voluntary, and costs a lot of additional work, but will be honored with authorship.
+    \item From the beginning of the study, keep in mind that the work is academically, and should compile to all academic standards. 
+    \item Practical relevance is important but the aim is to gather scientifically sound knowledge. We will not solve problems, but provide implications for practitioners. 
+\end{itemize}
+    
+\end{frame}
+
+\subsection{Learning R}
+
+\begin{frame}{What is R}
+
+\begin{itemize}
+    \item a domain specific programming language made for data analysis
+    \item open source and everybody can contribute her own functions and packages
+    \item highly flexible, but also a bit complicated at the beginning.
+    \item useful for complex statistical analysis and graphics
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{R in this course}
+    \begin{itemize}
+        \item We will use RStudio, which is a software that makes using R easy
+        \item You should conduct all data analysis in R
+        \item You should also write your final report in RStudio using Rmarkdown
+        \item To learn RStudio, you should do the following courses on \href{datacamp.com}{Datacamp}
+        \item To make your code sharable, link your RStudio with Gitlab
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Data Camp}
+\begin{itemize}
+    \item The following courses are compulsory
+    \begin{itemize}
+        \item \href{https://www.datacamp.com/courses/free-introduction-to-r}{Introduction to R}
+        \item \href{https://www.datacamp.com/courses/reporting-with-r-markdown}{Reporting with R Markdown}
+    \end{itemize}
+    \item From these courses choose one:
+    \begin{multicols}{2}
+    \begin{itemize}
+        \item \href{https://www.datacamp.com/courses/introduction-to-git-for-data-science}{Intro to Git for Data Science}
+        \item \href{https://www.datacamp.com/courses/intermediate-r}{Intermediate R}
+        \item \href{https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial}{Data Manipulation with dplyr in R}
+        \item \href{https://www.datacamp.com/courses/data-visualization-with-ggplot2-1}{Data Visualization with ggplot2 Part 1}
+        \item \href{https://www.datacamp.com/courses/foundations-of-inference}{Foundations of Inference}
+        \item \href{https://www.datacamp.com/courses/cleaning-data-in-r}{Data Cleaning in R}
+         \item \href{https://www.datacamp.com/courses/exploratory-data-analysis}{Exploratory Data Analysis}
+         \item \href{https://www.datacamp.com/courses/statistical-modeling-in-r-part-1}{Statistical Modeling in R Part 1}
+         \item \href{https://www.datacamp.com/courses/correlation-and-regression}{Correlation and Regression}
+         \item \href{https://www.datacamp.com/courses/multiple-and-logistic-regression}{Multiple and Logistic Regression}
+         \item \href{https://www.datacamp.com/courses/analyzing-survey-data-in-r}{Analyzing Survey Data in R}
+         \item \href{https://www.datacamp.com/courses/experimental-design-in-r}{Experimental Design in R}
+        \item \href{https://www.datacamp.com/courses/marketing-analytics-in-r-choice-modeling}{Choice Modeling Marketing}
+    \end{itemize}
+    \end{multicols}
+\end{itemize}
+
+    
+\end{frame}
+
+
+\section{Discrete Choice Experiments -- A brief introduction}
+
+\secpa
+
+\begin{frame}{Discrete Choice Experiments}
+
+%\begin{center}
+Discrete choice experiments are... \pause
+\begin{itemize}
+\item based on microeconomic theory. \pause
+\item a survey based instrument to elicit preferences and willingness to pay values for goods, services or policy changes.\pause
+\item a stated preferences approach: The respondent is asked to choose repeatedly between hypothetical alternatives.\pause
+\item a tool to investigate several attributes of a good rather than the good itself. \pause
+\item an increasingly popular method, especially in trans- and interdisciplinary research. \pause
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{The Choice Experiment}
+
+
+\begin{itemize}
+
+\item A choice experiment consists of... 
+\begin{itemize}
+\item an introductory text explaining the setting and choice task. \pause
+\item a description of each attribute. \pause
+\item optionally some reminders e.g. on budget. \pause
+\item the choice sets (usually 4 to 12 per respondent).  \pause
+\item some follow up questions. \pause
+\end{itemize}
+\item  A choice set is a set of alternatives, of which the respondent chooses the alternative that she likes most. \pause  
+
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Presentation of the Choice Experiment}
+
+
+\begin{itemize}
+\item Generally, choice sets are presented in matrix form, with the columns representing the alternatives and the rows the attributes. \pause
+\item Choice sets can be presented as pictures, maps, simple text. \pause
+\item The researcher decides on the number of alternatives and attributes, as well as the values the attributes can take. \pause
+\item In some cases, one alternative in a choice set depicts the current situation \textit{as today}. \pause
+\item In some other cases, one alternative represents a \textit{no choice} or \textit{opt out}. \pause
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{An example}
+
+
+\url{https://b1.surveyengine.com/survey/360&preview=true&working=1}
+
+\end{frame}
+
+
+\begin{frame}{Choices made by the researcher}
+
+
+\begin{itemize}
+\item It is not easy to find the proper format to present the choice sets. \pause
+\item Each choice comes with advantages and disadvantages.  \pause
+\item Some examples of difficult choices for researchers (and respondents): \pause
+\begin{itemize}
+\item Number of attributes:  More attributes give us more information, but make it more difficult to respondents (recommendation 3 to 7 attributes). \pause
+\item Number of alternatives: More alternatives increase the statistical efficiency (as we have more data), but may let the respondent to answer sloppy. \pause
+\item Pictures in the choice sets: Using pictures make the choice set look nicer, but may also influence the results or imply a very specific context. \pause 
+
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Some guidance}
+
+
+\begin{itemize}
+\item The valuation scenario should be understood, accepted and viewed as credible by respondents. \pause
+\item The valuation scenario should be clearly defined in terms of its spatial and temporal dimensions.  \pause
+\item All attributes should be fully defined in scope and size. Respondents have to understand what each attribute means. \pause
+\item Attributes should be independent from each other. E.g. ``Biodiversity'' and ``close to nature'' are not independent. \pause
+\item The cost attribute should be realistic, credible, familiar and binding for all respondents. \pause
+\item The scenario and attributes should be explained as neutral as possible. Avoid priming. \pause 
+\item \cite{johnston2017contemporary} provide these and many more important guidance features in great detail. 
+\end{itemize}
+\end{frame}
+
+
+
+
+
+% \begin{frame}{Figure}
+
+% \begin{itemize}
+% \item Ronald A Fischer war einer der bedeutendsten Statistiker des 20. Jahrhunderts
+% \end{itemize}
+% \begin{figure}
+% \includegraphics[width=1in]{pics/Fisher_3.jpeg}
+% \caption{Ronald Fisher}
+% \source{wikimedia commons}
+% \end{figure}
+
+% \begin{tikzpicture}[remember picture,overlay]
+%     \node[xshift=-1cm,yshift=-3cm] at (current page.north east) {\includegraphics[width=0.5in]{pics/Fisher_3.jpeg}} ;  
+% \end{tikzpicture}
+
+% \end{frame}
+
+\begin{frame}
+\begin{center}
+\Large
+\noindent
+
+Thank you very much for your attention
+\end{center}
+\end{frame}
+
+\bibliographystyle{plainnat}
+\begin{frame}{Bibliography}
+\bibliography{bibliography}
+\end{frame}
+
+\end{document}
